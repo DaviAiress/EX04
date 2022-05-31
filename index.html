@@ -5,8 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX04 CSS</title>
+    <style>
+        body{
+            background-color: rgba(166, 229, 240, 0.867);
+        }
+
+        h1{
+            font-style: oblique;
+            font-size: x-large;
+            text-align: center;
+            position: relative;
+            margin-top: 5%;
+        }
+
+        h2{
+            font-size: large;
+        }
+
+        ul li{
+            text-decoration: underline;
+            text-decoration-style:dashed ;
+        }
+
+        ol > li{
+            position: relative;
+            margin-left: 1.3%;
+        }
+
+        p{
+            text-decoration: line-through;
+        }
+        
+        li.pai{
+            color: red;
+        }
+        
+        #filho{
+            color: rgb(216, 133, 191);
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Exemplo 04: CSS</h1>
+
+    <h2>Lista</h2>
+    <ol type="A">
+        <p><b>Estados do Brasil</b></p>
+        <li class="pai">Minas Gerais
+            <ul id="filho">
+                <li>Juiz de Fora</li>
+                <li>Lima Duarte</li>
+                <li>Belo Horizonte</li>
+            </ul>
+        </li>
+        <li>São Paulo</li>
+        <li>Acre</li>
+    </ol>
 </body>
 </html>
